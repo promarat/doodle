@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.72ab7daf.chunk.css",
+    "main.js": "/static/js/main.ad3b89d1.chunk.js",
+    "main.js.map": "/static/js/main.ad3b89d1.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.083344b9.js",
+    "runtime-main.js.map": "/static/js/runtime-main.083344b9.js.map",
+    "static/css/2.4659568d.chunk.css": "/static/css/2.4659568d.chunk.css",
+    "static/js/2.1de29bc6.chunk.js": "/static/js/2.1de29bc6.chunk.js",
+    "static/js/2.1de29bc6.chunk.js.map": "/static/js/2.1de29bc6.chunk.js.map",
+    "static/js/3.2c99413f.chunk.js": "/static/js/3.2c99413f.chunk.js",
+    "static/js/3.2c99413f.chunk.js.map": "/static/js/3.2c99413f.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.72ab7daf.chunk.css.map": "/static/css/main.72ab7daf.chunk.css.map",
+    "static/js/2.1de29bc6.chunk.js.LICENSE.txt": "/static/js/2.1de29bc6.chunk.js.LICENSE.txt",
+    "static/media/Background_circles.53290198.png": "/static/media/Background_circles.53290198.png",
+    "static/media/App.css": "/static/media/Montserrat-Regular.3cd78665.ttf",
+    "static/media/phone1.413132dc.png": "/static/media/phone1.413132dc.png",
+    "static/media/phone2.f555b83c.png": "/static/media/phone2.f555b83c.png",
+    "static/media/phone3.2854a204.png": "/static/media/phone3.2854a204.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.083344b9.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.1de29bc6.chunk.js",
+    "static/css/main.72ab7daf.chunk.css",
+    "static/js/main.ad3b89d1.chunk.js"
+  ]
+}

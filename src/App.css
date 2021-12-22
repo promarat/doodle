@@ -1,0 +1,396 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@font-face {
+    font-family: "Titanone-Bold";
+    src: url('./assets/fonts/TitanOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Titanone-Regular";
+    src: url('./assets/fonts/TitanOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Titanone-Regular";
+    src: url('./assets/fonts/TitanOne-Regular.ttf');
+}
+
+@font-face {
+    font-family: "IBMPlexMono-Regular";
+    src: url('./assets/fonts/IBMPlexMono-Regular.ttf');
+}
+
+.App {
+    text-align: center;
+}
+
+body {
+    background-color: #F8F0FF;
+    font-family: Titanone-Bold;
+}
+
+.main-container {
+    /* max-width: 1366px;
+  border: 1px solid red;
+  background-image: url("./assets/imgs/Glass.jpg");
+  height: 1535px;
+  padding: 0;
+  background-size: cover;
+  background-position: center;
+  position: relative; */
+    /* width: 1366px; */
+    /* height: 1535px; */
+    left: 0px;
+    top: 0px;
+    padding: 0;
+    overflow: hidden;
+    background: #ffb3e3;
+    background-image: url("./assets/imgs/back.png");
+}
+
+.page-container {
+    width: 100%;
+    /* backdrop-filter: blur(100px); */
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .button-wrap {
+    width: 250px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+main .mintform {
+    width: 380px;
+    --tw-drop-shadow: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1)) drop-shadow(0 1px 1px rgba(0, 0, 0, 0.06));
+    filter: var(--tw-filter);
+    padding: 1.5rem;
+    --tw-bg-opacity: 1;
+    background-color: rgba(255, 255, 255, var(--tw-bg-opacity));
+    border-radius: 0.75rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin-bottom: 2rem;
+}
+
+.mainPng img {
+    border-radius: 50%;
+    border: 2.5px solid #333;
+}
+
+.connect-button {
+    border: none;
+    background-color: #ec4899;
+    color: #FFF;
+}
+
+.connect-button:hover {
+    box-shadow: 0px 0px 1px 2px #ffc2c2;
+}
+
+.form-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 2.25rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    letter-spacing: 4px;
+}
+
+.sub-title {
+    color: rgb(160 144 247);
+    font-weight: 500;
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 15px;
+    letter-spacing: 1.2px;
+}
+
+.max-title {
+    color: rgb(79 82 86);
+    margin-top: 0.25rem;
+    margin-bottom: 0.25rem;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}
+
+.quantity-input {
+    width: 100%;
+    border-radius: 7px;
+    background-color: #efefef;
+    font-size: 23px;
+    padding: 5px;
+    text-align: center;
+    color: grey;
+    margin: 10px 0;
+}
+
+.mint-button {
+    background-color: rgb(254 164 212);
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+    border-radius: 0.25rem;
+    border-radius: 7px;
+    width: 100%;
+}
+
+.page-block-title {
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.road-map {
+    margin-top: 35px;
+}
+
+.road-map-block {
+    margin-top: 30px;
+}
+
+.road-map-block .block-title {
+    font-size: 24px;
+    color: rgb(33 37 41);
+}
+
+.road-map-block .block-content {
+    font-weight: 600;
+    font-family: IBMPlexMono-Regular;
+    line-height: 26px;
+}
+
+.faq {
+    margin-top: 50px;
+}
+
+.faq-wrap {
+    max-width: 900px;
+    margin: 35px auto;
+}
+
+.faq-wrap .accordion__item {
+    margin-bottom: 15px;
+}
+
+.faq-wrap .accordion__button {
+    background: #ffb6b6;
+    height: 62px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: 600;
+    border-radius: 15px;
+    border: 2.5px solid #333;
+    letter-spacing: 2.5px;
+    color: #000;
+}
+
+.faq-wrap .f-item {
+    background-color: #a9e0fc;
+}
+
+.faq-wrap .se-item {
+    background-color: #f5ca9e;
+}
+
+.faq-wrap .th-item {
+    background-color: #fbe88e;
+}
+
+.faq-wrap .fo-item {
+    background-color: #c5c5fa;
+}
+
+.faq-wrap .fi-item {
+    background-color: #c4fccb;
+}
+
+.faq-wrap .si-item {
+    background-color: #ffa4d5;
+}
+
+.faq-wrap p {
+    font-family: IBMPlexMono-Regular;
+    text-align: left;
+    background: #a2e7ff;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+
+.faq-wrap .accordion__panel {
+    padding: 15px;
+    background-color: #a2e7ff;
+}
+
+.team {
+    margin-top: 65px;
+}
+
+.team-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 45px auto;
+}
+
+.team-content img {
+    border: 2.5px solid #333;
+    border-radius: 30px;
+}
+
+.founder {
+    margin-top: 15px;
+}
+
+.founder h3 {
+    letter-spacing: 2px;
+}
+
+.contracts-content {
+    margin-top: 35px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contracts-content a {
+    color: rgb(32, 32, 30);
+    text-decoration: underline !important;
+    cursor: pointer;
+}
+
+.footer {
+    margin-top: 55px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 1366px) {
+    .page-container {
+        width: 1140px !important;
+        position: relative;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 1103px) {
+    .sub-des {
+        width: 100%;
+        display: block;
+    }
+    .sub-input {
+        width: 100%;
+        display: block;
+        margin-top: 30px;
+    }
+    .subscribe-form {
+        padding: 79px 56px;
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 1103px) {
+    .subscribe-form,
+    .footer {
+        width: calc(100% - 64px);
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+}
+
+@media only screen and (max-width: 828px) {
+    .phones-mockup {
+        width: calc(100% - 80px);
+        margin: 86px auto;
+    }
+    .phones-mockup .mid-phone {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .phones-mockup .phone {
+        width: 203px !important;
+        height: 439px !important;
+    }
+}
+
+@media only screen and (max-width: 665px) {
+    .team-content {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    .header {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .head-title {
+        font-size: 48px;
+        line-height: 59px;
+    }
+    .head-screen {
+        margin-top: 53px;
+    }
+    .downloadButtons {
+        display: block;
+    }
+    .buttonWrap {
+        margin: 16px auto;
+    }
+    .button-block {
+        margin-top: 32px;
+    }
+    .phones-mockup {
+        margin-top: 30px;
+    }
+    .subscribe-title {
+        font-size: 28px;
+        line-height: 33px;
+    }
+    .subscribe-form {
+        margin-left: 12px;
+        margin-right: 12px;
+        width: calc(100% - 24px);
+        padding: 48px 24px;
+    }
+    .footer {
+        display: block;
+    }
+}
