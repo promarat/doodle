@@ -166,7 +166,7 @@ main .mintform {
 }
 
 .road-map-block {
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 .road-map-block .block-title {
@@ -178,15 +178,17 @@ main .mintform {
     font-weight: 600;
     font-family: IBMPlexMono-Regular;
     line-height: 26px;
+    padding: 0 25px;
 }
 
 .faq {
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .faq-wrap {
     max-width: 900px;
     margin: 35px auto;
+    padding: 0 25px;
 }
 
 .faq-wrap .accordion__item {
@@ -195,10 +197,8 @@ main .mintform {
 
 .faq-wrap .accordion__button {
     background: #ffb6b6;
-    height: 62px;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     text-align: center;
     font-size: 24px;
     padding-left: 20px;
@@ -237,7 +237,7 @@ main .mintform {
 .faq-wrap p {
     font-family: IBMPlexMono-Regular;
     text-align: left;
-    background: #a2e7ff;
+    background: transparent;
     font-size: 16px;
     font-weight: 600;
     margin-bottom: 0;
@@ -245,11 +245,11 @@ main .mintform {
 
 .faq-wrap .accordion__panel {
     padding: 15px;
-    background-color: #a2e7ff;
+    background-color: transparent;
 }
 
 .team {
-    margin-top: 65px;
+    margin-top: 85px;
 }
 
 .team-content {
@@ -258,6 +258,7 @@ main .mintform {
     justify-content: space-between;
     max-width: 800px;
     margin: 45px auto;
+    padding: 0 25px;
 }
 
 .team-content img {
