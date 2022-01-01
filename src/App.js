@@ -1,3 +1,4 @@
+import Web3 from "web3";
 import Logo from "./assets/imgs/Logo.png";
 import twitterPng from "./assets/imgs/twitter.png";
 import openseaPng from "./assets/imgs/opensea.png";
@@ -17,9 +18,38 @@ import {
 } from 'react-accessible-accordion';
 import { useEffect, useState } from "react";
 
-function App() {
+var web3;
+var nftContract;
+var address;
+var chainId;
 
+function App() {
   const [quantity, setQuantity] = useState(0);
+  const [walletAddress, setWalletAddress] = useState('');
+
+  const connectWallet = async () => {
+    if(window.ethereum != null) {
+      const web3 = new Web3(window.ethereum);
+      nftContract = null;
+      await window.ethereum.request({method: 'eth_chainId'}).then(data => {
+        chainId = data;
+      });
+      console.log(chainId);
+      // if(chainId == '0x4') {
+        await window.ethereum.request({method: 'eth_requestAccounts'}).then((data) => {
+          address = data[0];
+          setWalletAddress(address);
+          console.log(address);
+          var minAddr = address.substr(0,6) + "..." + address.substr(address.length - 4);
+          nftContract = {"inputs":[{"internalType":"uint256","name":"chosenAmount","type":"uint256"}],"name":"mint","outputs":[],"stateMutability":"payable","type":"function"};
+        });
+      // } else {
+      //   alert('Please change the network to Rinkeby and try again...')
+      // }
+    } else {
+      alert('Can\'t Find Metamask Wallet. Please install it and reload again to mint NFT.');
+    }
+  }
 
    useEffect(() => {
     new WOW.WOW({
@@ -43,7 +73,11 @@ function App() {
               <a className="ml-20" rel="noreferrer" href="https://opensea.io/collection/doodled-punks" target="_blank">
                 <img alt="Twitter" src={openseaPng} width="60" height="60"/>
               </a>
-              {/* <button className="connect-button">Connect Wallet</button> */}
+              {walletAddress ? 
+              <p className="address-text">{walletAddress}</p> :
+              <button onClick={connectWallet} className="connect-button">Connect Wallet</button>
+              }
+              
             </div>
           </header>
 
@@ -62,27 +96,33 @@ function App() {
           <div className="road-map">
             <h1 className="page-block-title">ROADMAP</h1>
             <div className="road-map-block">
-              <h2 className="block-title">Grow a quality community </h2>
+              <h2 className="block-title">CREATE A QUALITY COMMUNITY - 0%</h2>
               <p className="block-content">
-                We want to bring people together around the 2 best things in the world: Baby Apes + Doodles style. Only Fun and Good vibes in the Doodle Apes Society. 
+                Community and mutual support are the most important things for us! This is the main reason why we started this project! We want to bring people together around the 2 best things in the world: Apes + Doodles. Only Fun and Good vibes in the Doodle Apes Society. 
               </p>
             </div>
             <div className="road-map-block">
-              <h2 className="block-title">First Merch Drop </h2>
+              <h2 className="block-title">FIRST MERCH DROP - 25%</h2>
               <p className="block-content">
               The Doodle Apes society without IRL merch to flex ?? You trippin. We’re cooking some pieces for holders : Hoodies, Caps… We will share some ideas and designs soon! 
               </p>
             </div>
             <div className="road-map-block">
-              <h2 className="block-title">Airdrops  </h2>
+              <h2 className="block-title">ETH AIRDROP + NFT GIVEAWAY - 50% </h2>
               <p className="block-content">
-              Exclusive piece related to the Doodle Apes Society only for our holders. Maybe a secondary collection… 
+              It’s time to send some gifts straight to your wallet! we're going to host a big giveaway on Discord through mini-games that will be really fun! There will be 10 Doodle Apes to win and 10x 0.1ETH to win! 20 total winners! You just need to own 1 Doodle ape to join the Giveaway. 
               </p>
             </div>
             <div className="road-map-block">
-              <h2 className="block-title">Community Event </h2>
+              <h2 className="block-title">D.A.S BANK - 75%</h2>
               <p className="block-content">
-              We are the Doodle Apes Society. We need to create something huge! We will organize, create and sponsor IRL and online events! 
+              D.A.S Bank will be a community Wallet! We will send 100% of the royalties to the bank and those ETH will be airdropped between all the holders through giveaway and event. D.A.S is all about community first! 
+              </p>
+            </div>
+            <div className="road-map-block">
+              <h2 className="block-title">LEGENDARY DOODLE APES - 100%</h2>
+              <p className="block-content">
+              As you know the Doodle Apes society is all about dreams, hope and community! So we want to help our members to achieve their dreams that’s why we created the 5 legendary Doodle Apes!
               </p>
             </div>
           </div>

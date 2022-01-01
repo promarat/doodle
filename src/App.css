@@ -60,10 +60,18 @@ body {
 }
 
 header .button-wrap {
-    width: 250px;
+    width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
+}
+
+.address-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin-bottom: 0;
+    width: 150px;
 }
 
 main {
@@ -96,6 +104,8 @@ main .mintform {
     border: none;
     background-color: #ec4899;
     color: #FFF;
+    padding: 10px;
+    border-radius: 23px;
 }
 
 .connect-button:hover {
