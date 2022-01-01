@@ -3,10 +3,10 @@ import Logo from "./assets/imgs/Logo.png";
 import twitterPng from "./assets/imgs/twitter.png";
 import openseaPng from "./assets/imgs/opensea.png";
 import discordPng from "./assets/imgs/discord.png";
-import mainPng from "./assets/imgs/1.png";
+import mainPng from "./assets/imgs/Hide.jpg";
 import team1Png from "./assets/imgs/team1.png";
-import team2Png from "./assets/imgs/team1.png";
-import team3Png from "./assets/imgs/team1.png";
+import team2Png from "./assets/imgs/team2.jpg";
+import team3Png from "./assets/imgs/team3.jpg";
 import './App.css';
 import WOW from 'wowjs';
 import {
@@ -210,14 +210,14 @@ function App() {
                 </div>
               </div>
               <div>
-              <img src={team1Png} width={200} height={200}/>
+              <img src={team2Png} width={200} height={200}/>
               <div className="founder">
                   <h3>KBIRD</h3>
                   <p>Co-founder/Marketing</p>
                 </div>
               </div>
               <div>
-              <img src={team1Png} width={200} height={200}/>
+              <img src={team3Png} width={200} height={200}/>
               <div className="founder">
                   <h3>Andreii</h3>
                   <p>Project Developer</p>
