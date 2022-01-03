@@ -64,10 +64,10 @@ function App() {
           <header className="header"> 
             <img src={Logo} width={420} height={140}/>
             <div className="button-wrap">
-              <a className="ml-20" rel="noreferrer" href="https://opensea.io/collection/doodled-punks" target="_blank">
+              <a className="ml-20" rel="noreferrer" href="https://twitter.com/doodleapes_nft" target="_blank">
                 <img alt="Twitter" src={twitterPng} width="60" height="60"/>
               </a>
-              <a className="ml-20" rel="noreferrer" href="https://opensea.io/collection/doodled-punks" target="_blank">
+              <a className="ml-20" rel="noreferrer" href="https://discord.gg/PyFgjGNtGd" target="_blank">
                 <img alt="Discord" src={discordPng} width="60" height="60"/>
               </a>
               <a className="ml-20" rel="noreferrer" href="https://opensea.io/collection/doodled-punks" target="_blank">
